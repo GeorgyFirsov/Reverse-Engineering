@@ -63,7 +63,7 @@ narrow_processing:
 	jmp  narrow_processing
 	
 wide_processing:
-	cmp  dword [rdi], 0
+	cmp  word [rdi], 0
 	je   exit
 	add  rdi, 2
 	inc  rax
